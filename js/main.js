@@ -1,24 +1,24 @@
 const themebutton = document.querySelector('#themebutton');
 const html = document.querySelector("html");
-var test = 0
+var themevalue = 0
 
 themebutton.addEventListener('click', (e) => {
   if(html.classList.value == "") {
-    console.log("test")
+    console.log("themevalue")
     html.classList.toggle("dark");
-    test = 1;
+    themevalue = 1;
     setStorage()
   } else {
     html.classList.remove("dark");
-    test = 0;
+    themevalue = 0;
     setStorage()
   }
 })
 
 const loadtheme = () => {
-  if(test == 0) {
+  if(themevalue == 0) {
     html.classList.remove("dark");
-  } else if(test == 1) {
+  } else if(themevalue == 1) {
     html.classList.toggle("dark");
   } else {
     html.classList.remove("dark");
@@ -26,13 +26,13 @@ const loadtheme = () => {
 }
 
 const setStorage = () => {
-  window.localStorage.setItem("theme-value", JSON.stringify(test))
+  window.localStorage.setItem("theme-value", JSON.stringify(themevalue))
 }
 
 const getStore = () => {
   const d = JSON.parse(window.localStorage.getItem("theme-value"))
   console.log("Log " + d)
-  test = d === null ? [] : d
+  themevalue = d === null ? [] : d
   loadtheme();
 }
 

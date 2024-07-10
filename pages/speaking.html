@@ -13,11 +13,11 @@
     <header class="flex max-w-6xl">
       <div class="w-full flex p-6 my-auto justify-between ">
         <a href="main.html"><img
-          src="https://spotlight.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.51a13c67.jpg&w=64&q=75"
-          class="rounded-full w-12 ml-20 top-4"></a>
+            src="https://spotlight.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.51a13c67.jpg&w=64&q=75"
+            class="rounded-full w-12 ml-20 top-4"></a>
         <ul
-        class="list-none shadow-lg bg-zinc-800 dark:bg-zinc-100 font-semibold dark:text-black flex flex-row max-w-120 w-50 pl-7 pr-7 pt-3 pb-3 rounded-full gap-5 text-white">
-        <li><a class="hover:text-emerald-400 transition-all" href="about.html">About</a></li>
+          class="list-none shadow-lg bg-zinc-800 dark:bg-zinc-100 font-semibold dark:text-black hidden md:flex flex-row max-w-120 w-50 pl-7 pr-7 pt-3 pb-3 rounded-full gap-5 text-white">
+          <li><a class="hover:text-emerald-400 transition-all" href="about.html">About</a></li>
           <li><a class="hover:text-emerald-400 transition-all" href="articles.html">Articles</a></li>
           <li><a class="hover:text-emerald-400 transition-al" href="projects.html">Projects</a></li>
           <li><a
@@ -25,20 +25,37 @@
               href="speaking.html">Speaking</a></li>
           <li><a class="hover:text-emerald-400 transition-all" href="uses.html">Uses</a></li>
         </ul>
-        <button class="flex relative h-max p-2 rounded-full bg-zinc-800 dark:bg-zinc-100 hover:border border-zinc-400 border-opacity-50 w-max" id="themebutton">
-          <svg viewBox="0 0 24 24" aria-hidden="true"
-            class="h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500">
-            <path
-              d="M17.25 16.22a6.937 6.937 0 0 1-9.47-9.47 7.451 7.451 0 1 0 9.47 9.47ZM12.75 7C17 7 17 2.75 17 2.75S17 7 21.25 7C17 7 17 11.25 17 11.25S17 7 12.75 7Z"
-              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
-        </button>
+        <div>
+          <div class="flex gap-5">
+            <button
+              class="flex flex-row visible md:hidden bg-zinc-800 dark:bg-zinc-100 hover:border border-zinc-400 border-opacity-50 p-2 rounded font-semibold text-white dark:text-black">
+              Menu
+              <svg viewBox="0 0 8 6" aria-hidden="true"
+                class="ml-3 h-full w-2 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400">
+                <path d="M1.75 1.75 4 4.25l2.25-2.5" fill="none" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+            </button>
+            <button
+              class="flex relative h-max p-2 rounded-full bg-zinc-800 dark:bg-zinc-100 hover:border border-zinc-400 border-opacity-50 w-max"
+              id="themebutton">
+              <svg viewBox="0 0 24 24" aria-hidden="true"
+                class="h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500">
+                <path
+                  d="M17.25 16.22a6.937 6.937 0 0 1-9.47-9.47 7.451 7.451 0 1 0 9.47 9.47ZM12.75 7C17 7 17 2.75 17 2.75S17 7 21.25 7C17 7 17 11.25 17 11.25S17 7 12.75 7Z"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </header>
     <div class="p-16 max-w-2xl ml-10">
-      <span class="text-white font-sans font-bold text-5xl dark:text-black">I’ve spoken at events all around the world and been
+      <span class="text-white font-sans font-bold text-5xl dark:text-black">I’ve spoken at events all around the world
+        and been
         interviewed for many podcasts.</span>
-      <p class="text-white leading-6 mt-5 font-sans opacity-70 dark:text-black">One of my favorite ways to share my ideas is live on
+      <p class="text-white leading-6 mt-5 font-sans opacity-70 dark:text-black">One of my favorite ways to share my
+        ideas is live on
         stage, where there’s so much more communication bandwidth than there is in writing, and I love podcast
         interviews because they give me the opportunity to answer questions instead of just present my opinions.</p>
     </div>
@@ -47,21 +64,28 @@
         <span class="text-white ml-5 text-sm font-bold dark:text-black">Conferences</span>
       </div>
       <div class="flex flex-col">
-        <div class="flex flex-col max-w-xl hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-all p-5 relative -top-5 rounded"> <!-- 1. -->
+        <div
+          class="flex flex-col max-w-xl hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-all p-5 relative -top-5 rounded">
+          <!-- 1. -->
           <div class="border-l border-white border-opacity-10 dark:border-black/20">
             <span class="ml-3 text-white opacity-50 text-sm dark:text-black">SysConf 2021</span>
           </div>
-          <span class="text-white font-bold mt-5 dark:text-black">In space, no one can watch you stream — until now</span>
-          <span class="text-white opacity-70 mt-3 text-sm dark:text-black">A technical deep-dive into HelioStream, the real-time
+          <span class="text-white font-bold mt-5 dark:text-black">In space, no one can watch you stream — until
+            now</span>
+          <span class="text-white opacity-70 mt-3 text-sm dark:text-black">A technical deep-dive into HelioStream, the
+            real-time
             streaming library I wrote for transmitting live video back to Earth.</span>
           <span class="text-emerald-400 mt-5 text-sm">Watch video ></span>
         </div>
-        <div class="flex flex-col max-w-xl hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-all p-5 relative -top-5 rounded mt-5"> <!-- 2. -->
+        <div
+          class="flex flex-col max-w-xl hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-all p-5 relative -top-5 rounded mt-5">
+          <!-- 2. -->
           <div class="border-l border-white border-opacity-10 dark:border-black/20">
             <span class="ml-3 text-white opacity-50 text-sm dark:text-black">Business of Startups 2020</span>
           </div>
           <span class="text-white font-bold mt-5 dark:text-black">Lessons learned from our first product recall</span>
-          <span class="text-white opacity-70 mt-3 text-sm dark:text-black">They say that if you’re not embarassed by your first version,
+          <span class="text-white opacity-70 mt-3 text-sm dark:text-black">They say that if you’re not embarassed by
+            your first version,
             you’re doing it wrong. Well when you’re selling DIY space shuttle kits it turns out it’s a bit more
             complicated.</span>
           <span class="text-emerald-400 mt-5 text-sm">Watch video ></span>
@@ -73,30 +97,39 @@
         <span class="text-white ml-5 text-sm font-bold dark:text-black">Podcasts</span>
       </div>
       <div class="flex flex-col">
-        <div class="flex flex-col max-w-xl hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-all relative -top-5 p-5 rounded"> <!-- 1. -->
+        <div
+          class="flex flex-col max-w-xl hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-all relative -top-5 p-5 rounded">
+          <!-- 1. -->
           <div class="border-l border-white border-opacity-10 dark:border-black/20">
             <span class="ml-3 text-white opacity-50 text-sm dark:text-black">Encoding Design, July 2022</span>
           </div>
           <span class="text-white font-bold mt-5 dark:text-black">Using design as a competitive advantage</span>
-          <span class="text-white opacity-70 mt-3 text-sm dark:text-black">How we used world-class visual design to attract a great
+          <span class="text-white opacity-70 mt-3 text-sm dark:text-black">How we used world-class visual design to
+            attract a great
             team, win over customers, and get more press for Planetaria.</span>
           <span class="text-emerald-400 mt-5 text-sm">Listen to podcast ></span>
         </div>
-        <div class="flex flex-col max-w-xl hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-all p-5 relative -top-5 rounded mt-5"> <!-- 2. -->
+        <div
+          class="flex flex-col max-w-xl hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-all p-5 relative -top-5 rounded mt-5">
+          <!-- 2. -->
           <div class="border-l border-white border-opacity-10 dark:border-black/20">
             <span class="ml-3 text-white opacity-50 text-sm dark:text-black">The Escape Velocity Show, March 2022</span>
           </div>
           <span class="text-white font-bold mt-5 dark:text-black">Bootstrapping an aerospace company to $17M ARR</span>
-          <span class="text-white opacity-70 mt-3 text-sm dark:text-black">The story of how we built one of the most promising space
+          <span class="text-white opacity-70 mt-3 text-sm dark:text-black">The story of how we built one of the most
+            promising space
             startups in the world without taking any capital from investors.</span>
           <span class="text-emerald-400 mt-5 text-sm">Listen to podcast ></span>
         </div>
-        <div class="flex flex-col max-w-xl hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-all p-5 relative -top-5 rounded mt-5"> <!-- 3. -->
+        <div
+          class="flex flex-col max-w-xl hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-all p-5 relative -top-5 rounded mt-5">
+          <!-- 3. -->
           <div class="border-l border-white border-opacity-10 dark:border-black/20">
             <span class="ml-3 text-white opacity-50 text-sm dark:text-black">How They Work Radio, September 2021</span>
           </div>
           <span class="text-white font-bold mt-5 dark:text-black">Programming your company operating system</span>
-          <span class="text-white opacity-70 mt-3 text-sm dark:text-black">On the importance of creating systems and processes for
+          <span class="text-white opacity-70 mt-3 text-sm dark:text-black">On the importance of creating systems and
+            processes for
             running your business so that everyone on the team knows how to make the right decision no matter the
             situation.</span>
           <span class="text-emerald-400 mt-5 text-sm">Listen to podcast ></span>
@@ -116,4 +149,5 @@
 
 </body>
 <script src="../js/main.js"></script>
+
 </html>

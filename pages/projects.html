@@ -16,7 +16,7 @@
             src="https://spotlight.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.51a13c67.jpg&w=64&q=75"
             class="rounded-full w-12 ml-20 top-4"></a>
         <ul
-          class="list-none shadow-lg bg-zinc-800 dark:bg-zinc-100 flex flex-row font-semibold max-w-120 w-50 pl-7 pr-7 pt-3 pb-3 rounded-full gap-5 text-white dark:text-black">
+          class="list-none shadow-lg bg-zinc-800 dark:bg-zinc-100 hidden md:flex flex-row font-semibold max-w-120 w-50 pl-7 pr-7 pt-3 pb-3 rounded-full gap-5 text-white dark:text-black">
           <li><a class="hover:text-emerald-400 transition-all" href="about.html">About</a></li>
           <li><a class="hover:text-emerald-400 transition-all" href="articles.html">Articles</a></li>
           <li><a
@@ -25,23 +25,38 @@
           <li><a class="hover:text-emerald-400 transition-all" href="speaking.html">Speaking</a></li>
           <li><a class="hover:text-emerald-400 transition-all" href="uses.html">Uses</a></li>
         </ul>
-        <button
-          class="flex relative h-max p-2 rounded-full bg-zinc-800 dark:bg-zinc-100 hover:border border-zinc-400 border-opacity-50 w-max"
-          id="themebutton">
-          <svg viewBox="0 0 24 24" aria-hidden="true"
-            class="h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500">
-            <path
-              d="M17.25 16.22a6.937 6.937 0 0 1-9.47-9.47 7.451 7.451 0 1 0 9.47 9.47ZM12.75 7C17 7 17 2.75 17 2.75S17 7 21.25 7C17 7 17 11.25 17 11.25S17 7 12.75 7Z"
-              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
-        </button>
+        <div>
+          <div class="flex gap-5">
+            <button
+              class="flex flex-row visible md:hidden bg-zinc-800 dark:bg-zinc-100 hover:border border-zinc-400 border-opacity-50 p-2 rounded font-semibold text-white dark:text-black">
+              Menu
+              <svg viewBox="0 0 8 6" aria-hidden="true"
+                class="ml-3 h-full w-2 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400">
+                <path d="M1.75 1.75 4 4.25l2.25-2.5" fill="none" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+            </button>
+            <button
+              class="flex relative h-max p-2 rounded-full bg-zinc-800 dark:bg-zinc-100 hover:border border-zinc-400 border-opacity-50 w-max"
+              id="themebutton">
+              <svg viewBox="0 0 24 24" aria-hidden="true"
+                class="h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500">
+                <path
+                  d="M17.25 16.22a6.937 6.937 0 0 1-9.47-9.47 7.451 7.451 0 1 0 9.47 9.47ZM12.75 7C17 7 17 2.75 17 2.75S17 7 21.25 7C17 7 17 11.25 17 11.25S17 7 12.75 7Z"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </header>
     <div class="p-16 max-w-3xl ml-10">
-      <span class="text-white dark:text-black font-sans font-bold relative text-5xl">Things I’ve made trying to put my dent in the
+      <span class="text-white dark:text-black font-sans font-bold relative text-5xl">Things I’ve made trying to put my
+        dent in the
         universe.
       </span>
-      <p class="text-white dark:text-black opacity-50 pt-7">I’ve worked on tons of little projects over the years but these are the ones
+      <p class="text-white dark:text-black opacity-50 pt-7">I’ve worked on tons of little projects over the years but
+        these are the ones
         that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check
         out the code and contribute if you have ideas for how it can be improved.</p>
     </div>
@@ -52,7 +67,8 @@
             <img src="https://spotlight.tailwindui.com/_next/static/media/planetaria.ecd81ade.svg">
           </div>
           <a href="#" class="text-white dark:text-black leading-10 font-semibold">Planetaria</a>
-          <span class="text-white dark:text-black leading-5 opacity-70 w-80">Creating technology to empower civilians to explore space
+          <span class="text-white dark:text-black leading-5 opacity-70 w-80">Creating technology to empower civilians to
+            explore space
             on their own terms.</span>
           <div class="flex flex-row mt-4">
             <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 flex-none text-white dark:text-black">
@@ -68,7 +84,8 @@
             <img src="https://spotlight.tailwindui.com/_next/static/media/animaginary.8d221e52.svg">
           </div>
           <a href="#" class="text-white dark:text-black leading-10 font-semibold">Animaginary</a>
-          <span class="text-white dark:text-black leading-5 opacity-70 w-80">High performance web animation library, hand-written in
+          <span class="text-white dark:text-black leading-5 opacity-70 w-80">High performance web animation library,
+            hand-written in
             optimized WASM.</span>
           <div class="flex flex-row mt-4">
             <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 flex-none text-white dark:text-black">
@@ -84,7 +101,8 @@
             <img src="https://spotlight.tailwindui.com/_next/static/media/helio-stream.2ac8d11f.svg">
           </div>
           <a href="#" class="text-white dark:text-black leading-10 font-semibold">HelioStream</a>
-          <span class="text-white dark:text-black leading-5 opacity-70 w-80">Real-time video streaming library, optimized for
+          <span class="text-white dark:text-black leading-5 opacity-70 w-80">Real-time video streaming library,
+            optimized for
             interstellar transmission.</span>
           <div class="flex flex-row mt-4">
             <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 flex-none text-white dark:text-black">
@@ -102,7 +120,8 @@
             <img src="https://spotlight.tailwindui.com/_next/static/media/cosmos.c70b0295.svg">
           </div>
           <a href="#" class="text-white dark:text-black leading-10 font-semibold">cosmOS</a>
-          <span class="text-white dark:text-black leading-5 opacity-70 w-80">The operating system that powers our Planetaria space
+          <span class="text-white dark:text-black leading-5 opacity-70 w-80">The operating system that powers our
+            Planetaria space
             shuttles.</span>
           <div class="flex flex-row mt-4">
             <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 flex-none text-white dark:text-black">
@@ -118,7 +137,8 @@
             <img src="https://spotlight.tailwindui.com/_next/static/media/open-shuttle.db0327e4.svg">
           </div>
           <a href="#" class="text-white dark:text-black leading-10 font-semibold">OpenShuttle</a>
-          <span class="text-white dark:text-black leading-5 opacity-70 w-80">The schematics for the first rocket I designed that
+          <span class="text-white dark:text-black leading-5 opacity-70 w-80">The schematics for the first rocket I
+            designed that
             successfully made it to orbit.</span>
           <div class="flex flex-row mt-4">
             <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 flex-none text-white dark:text-black">
@@ -144,4 +164,5 @@
 
 </body>
 <script src="../js/main.js"></script>
+
 </html>

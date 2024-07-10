@@ -13,30 +13,47 @@
     <header class="flex max-w-6xl">
       <div class="w-full flex p-6 my-auto justify-center">
         <ul
-          class="list-none shadow-lg bg-zinc-800 dark:bg-zinc-100 dark:text-black flex flex-row font-semibold max-w-120 w-50 pl-7 pr-7 pt-3 pb-3 rounded-full gap-5 text-white">
+          class="list-none shadow-lg bg-zinc-800 dark:bg-zinc-100 dark:text-black hidden md:flex flex-row font-semibold max-w-120 w-50 pl-7 pr-7 pt-3 pb-3 rounded-full gap-5 text-white">
           <li><a class="hover:text-emerald-400 transition-all" href="about.html">About</a></li>
           <li><a class="hover:text-emerald-400 transition-all" href="articles.html">Articles</a></li>
           <li><a class="hover:text-emerald-400 transition-all" href="projects.html">Projects</a></li>
           <li><a class="hover:text-emerald-400 transition-all" href="speaking.html">Speaking</a></li>
           <li><a class="hover:text-emerald-400 transition-all" href="uses.html">Uses</a></li>
         </ul>
+        <div>
+          <div class="flex gap-5">
+            <button
+              class="flex flex-row visible md:hidden bg-zinc-800 dark:bg-zinc-100 hover:border border-zinc-400 border-opacity-50 p-2 rounded font-semibold text-white dark:text-black">
+              Menu
+              <svg viewBox="0 0 8 6" aria-hidden="true"
+                class="ml-3 h-full w-2 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400">
+                <path d="M1.75 1.75 4 4.25l2.25-2.5" fill="none" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+            </button>
+            <button
+              class="flex relative h-max p-2 rounded-full bg-zinc-800 dark:bg-zinc-100 hover:border border-zinc-400 border-opacity-50 w-max"
+              id="themebutton">
+              <svg viewBox="0 0 24 24" aria-hidden="true"
+                class="h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500">
+                <path
+                  d="M17.25 16.22a6.937 6.937 0 0 1-9.47-9.47 7.451 7.451 0 1 0 9.47 9.47ZM12.75 7C17 7 17 2.75 17 2.75S17 7 21.25 7C17 7 17 11.25 17 11.25S17 7 12.75 7Z"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
-      <button class="flex relative mr-7 mt-6 h-max p-2 rounded-full bg-zinc-800 hover:border dark:bg-zinc-100 border-zinc-400 border-opacity-50 w-max" id="themebutton">
-        <svg viewBox="0 0 24 24" aria-hidden="true"
-          class="h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500">
-          <path
-            d="M17.25 16.22a6.937 6.937 0 0 1-9.47-9.47 7.451 7.451 0 1 0 9.47 9.47ZM12.75 7C17 7 17 2.75 17 2.75S17 7 21.25 7C17 7 17 11.25 17 11.25S17 7 12.75 7Z"
-            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
-      </button>
     </header>
     <div class="p-16 max-w-3xl">
       <img
         src="https://spotlight.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.51a13c67.jpg&w=64&q=75"
         class="rounded-full pb-5">
-      <span class="text-white dark:text-black font-sans font-bold relative text-5xl">Software designer, founder, and amateur
+      <span class="text-white dark:text-black font-sans font-bold relative text-5xl">Software designer, founder, and
+        amateur
         astronaut.</span>
-      <p class="text-white dark:text-black opacity-50 pt-7">I’m Spencer, a software designer and entrepreneur based in New York City.
+      <p class="text-white dark:text-black opacity-50 pt-7">I’m Spencer, a software designer and entrepreneur based in
+        New York City.
         I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore
         space on their own terms.</p>
       <div class="flex flex-row pt-5 w-max gap-5">
@@ -113,7 +130,8 @@
           </svg>
           <span class="text-white dark:text-black font-bold">Stay up to date</span>
         </div>
-        <p class="max-w-2xl w-96 text-white dark:text-black opacity-70 mt-2">Get notified when I publish something new, and unsubscribe
+        <p class="max-w-2xl w-96 text-white dark:text-black opacity-70 mt-2">Get notified when I publish something new,
+          and unsubscribe
           at any time.</p>
         <div class="flex flex-row mt-3 gap-5">
           <input type="text" placeholder="Email adress" required class="rounded pl-2 bg-transparent border w-72">
@@ -126,14 +144,14 @@
         <div class="flex flex-col gap-3 w-96">
           <div class="flex flex-row">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-            aria-hidden="true" class="h-6 w-6 flex-none">
-            <path d="M2.75 9.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
-              class="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"></path>
-            <path
-              d="M3 14.25h6.249c.484 0 .952-.002 1.316.319l.777.682a.996.996 0 0 0 1.316 0l.777-.682c.364-.32.832-.319 1.316-.319H21M8.75 6.5V4.75a2 2 0 0 1 2-2h2.5a2 2 0 0 1 2 2V6.5"
-              class="stroke-zinc-400 dark:stroke-zinc-500"></path>
-          </svg>
-          <span class="text-white dark:text-black font-bold ml-3">Work</span>
+              aria-hidden="true" class="h-6 w-6 flex-none">
+              <path d="M2.75 9.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
+                class="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"></path>
+              <path
+                d="M3 14.25h6.249c.484 0 .952-.002 1.316.319l.777.682a.996.996 0 0 0 1.316 0l.777-.682c.364-.32.832-.319 1.316-.319H21M8.75 6.5V4.75a2 2 0 0 1 2-2h2.5a2 2 0 0 1 2 2V6.5"
+                class="stroke-zinc-400 dark:stroke-zinc-500"></path>
+            </svg>
+            <span class="text-white dark:text-black font-bold ml-3">Work</span>
           </div>
           <div class="flex flex-row">
             <div class="flex flex-row p-2 rounded-full w-fit bg-zinc-900">
@@ -184,7 +202,9 @@
             </div>
           </div>
         </div>
-        <button class="text-white dark:text-black dark:bg-zinc-50 bg-zinc-900 opacity-70 p-1 mt-4 rounded-[8px] w-full">Download CV</button>
+        <button
+          class="text-white dark:text-black dark:bg-zinc-50 bg-zinc-900 opacity-70 p-1 mt-4 rounded-[8px] w-full">Download
+          CV</button>
       </div>
     </div>
     <footer class="flex flex-row justify-around p-10">
@@ -199,4 +219,5 @@
   </div>
 </body>
 <script src="../js/main.js"></script>
+
 </html>
