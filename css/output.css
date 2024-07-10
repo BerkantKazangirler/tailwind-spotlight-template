@@ -967,10 +967,6 @@ video {
   max-width: 48rem;
 }
 
-.max-w-5xl {
-  max-width: 64rem;
-}
-
 .max-w-md {
   max-width: 28rem;
 }
@@ -1529,6 +1525,10 @@ video {
   gap: 5rem;
 }
 
+.gap-24 {
+  gap: 6rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
@@ -1543,6 +1543,18 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-48 {
+  gap: 12rem;
+}
+
+.gap-44 {
+  gap: 11rem;
+}
+
+.gap-40 {
+  gap: 10rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
