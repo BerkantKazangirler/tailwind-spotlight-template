@@ -11,7 +11,7 @@
 <body class="bg-black dark:bg-zinc-100">
   <div class="m-auto container bg-zinc-900 dark:bg-zinc-50">
     <header class="flex max-w-6xl">
-      <div class="w-full flex p-6 my-auto justify-center">
+      <div class="w-full flex p-2 mt-5 my-auto justify-end md:p-6 md:mt-0 md:justify-center">
         <ul
           class="list-none shadow-lg bg-zinc-800 dark:bg-zinc-100 dark:text-black hidden md:flex flex-row font-semibold max-w-120 w-50 pl-7 pr-7 pt-3 pb-3 rounded-full gap-5 text-white">
           <li><a class="hover:text-emerald-400 transition-all" href="about.html">About</a></li>
@@ -45,7 +45,7 @@
         </div>
       </div>
     </header>
-    <div class="p-16 max-w-3xl">
+    <div class="p-4 max-w-3xl md:p-16">
       <img
         src="https://spotlight.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.51a13c67.jpg&w=64&q=75"
         class="rounded-full pb-5">
@@ -90,7 +90,7 @@
         </a>
       </div>
     </div>
-    <div class="absolute left-1/2 -translate-x-1/2 flex flex-row gap-5 w-fit">
+    <div class="absolute left-1/2 -translate-x-1/2 flex flex-row gap-5 w-fit overflow-hidden">
       <div class="overflow-hidden rounded-xl w-72 h-72">
         <img
           src="https://spotlight.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-1.c5d2141c.jpg&w=384&q=75"
@@ -118,7 +118,7 @@
       </div>
     </div>
     <div class="h-72 w-full"></div>
-    <div class="relative flex justify-end h-fit p-7">
+    <div class="relative flex mt-8 justify-end h-fit p-0 md:p-7 md:mt-0">
       <div class="border-gray-200/50 dark:border-black/20 border p-4 min-w-96 rounded-[12px]">
         <div class="flex flex-row gap-3">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
@@ -139,9 +139,9 @@
         </div>
       </div>
     </div>
-    <div class="relative flex justify-end h-fit p-7 border-b border-gray-200/50 dark:border-black/20">
-      <div class="border-gray-200/50 border dark:border-black/20 p-4 min-w-96 rounded-[12px]">
-        <div class="flex flex-col gap-3 w-96">
+    <div class="relative flex justify-end h-fit p-2 md:p-7 mt-12 md:mt-0 border-b border-gray-200/50 dark:border-black/20">
+      <div class="border-gray-200/50 border dark:border-black/20 p-4 min-w-86 rounded-[12px]">
+        <div class="flex flex-col gap-3 w-fit md:w-96">
           <div class="flex flex-row">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
               aria-hidden="true" class="h-6 w-6 flex-none">
@@ -159,7 +159,7 @@
             </div>
             <div class="ml-3 flex flex-col">
               <span class="text-white dark:text-black">Planetaria</span>
-              <div class="flex justify-between w-80">
+              <div class="flex justify-between w-72">
                 <span class="text-xs text-white dark:text-black opacity-70">CEO</span>
                 <span class="text-xs text-white dark:text-black opacity-70">2019 — Present</span>
               </div>
@@ -171,7 +171,7 @@
             </div>
             <div class="ml-3 flex flex-col">
               <span class="text-white dark:text-black">Airbnb</span>
-              <div class="flex justify-between w-80">
+              <div class="flex justify-between w-72">
                 <span class="text-xs text-white dark:text-black opacity-70">Product Designer</span>
                 <span class="text-xs text-white dark:text-black opacity-70">2014 — 2019</span>
               </div>
@@ -183,7 +183,7 @@
             </div>
             <div class="ml-3 flex flex-col">
               <span class="text-white dark:text-black">Facebook</span>
-              <div class="flex justify-between w-80">
+              <div class="flex justify-between w-72">
                 <span class="text-xs text-white dark:text-black opacity-70">iOS Software Engineer</span>
                 <span class="text-xs text-white dark:text-black opacity-70">2011 — 2014</span>
               </div>
@@ -195,7 +195,7 @@
             </div>
             <div class="ml-3 flex flex-col">
               <span class="text-white dark:text-black">Starbucks</span>
-              <div class="flex justify-between w-80">
+              <div class="flex justify-between w-72">
                 <span class="text-xs text-white dark:text-black opacity-70">Shift Supervisor</span>
                 <span class="text-xs text-white dark:text-black opacity-70">2008 - 2011</span>
               </div>
@@ -207,14 +207,14 @@
           CV</button>
       </div>
     </div>
-    <footer class="flex flex-row justify-around p-10">
-      <div class="text-white dark:text-black flex gap-8">
+    <footer class="flex flex-col justify-around p-10 border-t border-gray-200/50 md:flex-row">
+      <div class="text-white flex gap-8 dark:text-black">
         <a href="about.html" class="hover:text-emerald-400 transition-all">About</a>
         <a href="projects.html" class="hover:text-emerald-400 transition-all">Projects</a>
         <a href="speaking.html" class="hover:text-emerald-400 transition-all">Speaking</a>
         <a href="uses.html" class="hover:text-emerald-400 transition-all">Uses</a>
       </div>
-      <span class="text-white dark:text-black opacity-50">© 2024 Spencer Sharp. All rights reserved.</span>
+      <span class="text-white opacity-50 mt-4 pb-5 dark:text-black md:mt-0 md:pb-0">© 2024 Spencer Sharp. All rights reserved.</span>
     </footer>
   </div>
 </body>
