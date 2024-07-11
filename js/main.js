@@ -2,7 +2,10 @@ const themebutton = document.querySelector('#themebutton');
 const html = document.querySelector("html");
 var themevalue = 0
 let lastScrollTop = 0;
+const hamburgermenu = document.querySelector("#hamburger-element");
+const hamburgerexit = document.querySelector("#hamburger-exit");
 const headerbar = document.querySelector("header")
+const hamburgermenudiv = document.querySelector("#hamburger");
 
 themebutton.addEventListener('click', (e) => {
   if(html.classList.value == "") {
@@ -15,6 +18,14 @@ themebutton.addEventListener('click', (e) => {
     themevalue = 0;
     setStorage()
   }
+})
+
+hamburgermenu.addEventListener('click', (e) => {
+  hamburgermenudiv.classList.toggle('hidden');
+})
+
+hamburgerexit.addEventListener('click', (e) => {
+  hamburgermenudiv.classList.toggle('hidden');
 })
 
 const loadtheme = () => {

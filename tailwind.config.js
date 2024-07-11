@@ -6,6 +6,8 @@ module.exports = {
     extend: {
       spacing: {
         '128': '32rem',
+        '256': '44rem',
+        '384': '96rem',
       },
       container: {
         screens: {
