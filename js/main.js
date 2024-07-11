@@ -1,6 +1,8 @@
 const themebutton = document.querySelector('#themebutton');
 const html = document.querySelector("html");
 var themevalue = 0
+let lastScrollTop = 0;
+const headerbar = document.querySelector("header")
 
 themebutton.addEventListener('click', (e) => {
   if(html.classList.value == "") {
@@ -39,3 +41,17 @@ const getStore = () => {
 window.addEventListener('load', () => {
   getStore();
 }, false)
+
+window.addEventListener('scroll', function() {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop) {
+      headerbar.classList.remove('sticky');
+      headerbar.classList.add('relative');
+  } else {
+      headerbar.classList.remove('relative');
+      headerbar.classList.add('sticky');
+  }
+
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});
