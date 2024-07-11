@@ -11,12 +11,12 @@
 <body class="bg-black dark:bg-zinc-100">
   <div class="m-auto container bg-zinc-900 dark:bg-zinc-50">
     <header class="flex max-w-6xl">
-      <div class="w-full flex p-6 my-auto justify-between ">
+      <div class="w-full flex p-0 mt-5 my-auto justify-between md:p-6 md:mt-0">
         <a href="main.html"><img
             src="https://spotlight.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.51a13c67.jpg&w=64&q=75"
-            class="rounded-full w-12 ml-20 top-4"></a>
+            class="rounded-full w-12 ml-5 top-4 md:ml-20"></a>
         <ul
-          class="list-none shadow-lg bg-zinc-800 flex flex-row dark:bg-zinc-100 font-semibold dark:text-black max-w-120 w-50 pl-7 pr-7 pt-3 pb-3 rounded-full gap-5 text-white">
+          class="list-none shadow-lg bg-zinc-800 dark:bg-zinc-100 font-semibold dark:text-black hidden md:flex flex-row max-w-120 w-50 pl-7 pr-7 pt-3 pb-3 rounded-full gap-5 text-white">
           <li><a class="hover:text-emerald-400 transition-all" href="about.html">About</a></li>
           <li><a
               class="hover:text-emerald-400 text-emerald-400 border-b-2 pb-3 rounded-[8px] border-b-emerald-400 transition-all"
@@ -50,23 +50,23 @@
         </div>
       </div>
     </header>
-    <div class="relative w-3/6 p-20 ml-10">
-      <span class="text-white text-4xl font-bold dark:text-black">
+    <div class="p-4 max-w-2xl mt-10 ml-0 md:p-16 md:ml-10 md:mt-0">
+      <span class="text-white text-3xl md:text-4xl font-bold dark:text-black">
         Writing on software design, company building, and the aerospace industry.
       </span>
-      <p class="text-white text-xl opacity-50 w-96 dark:text-black">
+      <p class="text-white text-lg opacity-50 w-96 md:text-xl dark:text-black">
         All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological
         order.
       </p>
     </div>
-    <footer class="flex flex-row justify-around p-10 border-t border-gray-200/50">
+    <footer class="flex flex-col justify-around p-10 border-t border-gray-200/50 md:flex-row">
       <div class="text-white flex gap-8 dark:text-black">
         <a href="about.html" class="hover:text-emerald-400 transition-all">About</a>
         <a href="projects.html" class="hover:text-emerald-400 transition-all">Projects</a>
         <a href="speaking.html" class="hover:text-emerald-400 transition-all">Speaking</a>
         <a href="uses.html" class="hover:text-emerald-400 transition-all">Uses</a>
       </div>
-      <span class="text-white opacity-50 dark:text-black">© 2024 Spencer Sharp. All rights reserved.</span>
+      <span class="text-white opacity-50 mt-4 pb-5 dark:text-black md:mt-0 md:pb-0">© 2024 Spencer Sharp. All rights reserved.</span>
     </footer>
   </div>
 

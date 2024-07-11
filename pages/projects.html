@@ -11,10 +11,10 @@
 <body class="bg-black dark:bg-zinc-100">
   <div class="m-auto container bg-zinc-900 dark:bg-zinc-50">
     <header class="flex max-w-6xl">
-      <div class="w-full flex p-6 my-auto justify-between ">
+      <div class="w-full flex p-0 mt-5 my-auto justify-between md:p-6 md:mt-0">
         <a href="main.html"><img
             src="https://spotlight.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.51a13c67.jpg&w=64&q=75"
-            class="rounded-full w-12 ml-20 top-4"></a>
+            class="rounded-full w-12 ml-5 top-4 md:ml-20"></a>
         <ul
           class="list-none shadow-lg bg-zinc-800 dark:bg-zinc-100 hidden md:flex flex-row font-semibold max-w-120 w-50 pl-7 pr-7 pt-3 pb-3 rounded-full gap-5 text-white dark:text-black">
           <li><a class="hover:text-emerald-400 transition-all" href="about.html">About</a></li>
@@ -50,7 +50,7 @@
         </div>
       </div>
     </header>
-    <div class="p-16 max-w-3xl ml-10">
+    <div class="p-4 max-w-2xl mt-10 ml-0 md:p-16 md:ml-10 md:mt-0">
       <span class="text-white dark:text-black font-sans font-bold relative text-5xl">Things I’ve made trying to put my
         dent in the
         universe.
@@ -60,8 +60,8 @@
         that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check
         out the code and contribute if you have ideas for how it can be improved.</p>
     </div>
-    <div class="flex flex-col ml-10 border-b-2 border-white dark:border-black/20 border-opacity-10 pb-24">
-      <div class="flex flex-row justify-around pl-10 pr-10 pt-10">
+    <div class="flex flex-col ml-0 border-b-2 border-white dark:border-black/20 border-opacity-10 pb-24 md:ml-10">
+      <div class="flex flex-col justify-around pl-0 pr-0 pt-10 md:pl-10 md:pr-10 md:flex-row">
         <div class="flex flex-col hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-all p-5 rounded">
           <div class="p-2 rounded-full w-max bg-zinc-800 dark:bg-zinc-100">
             <img src="https://spotlight.tailwindui.com/_next/static/media/planetaria.ecd81ade.svg">
@@ -114,8 +114,8 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-row pl-9 pr-10 gap-8">
-        <div class="flex flex-col hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-all ml-3 p-5 rounded">
+      <div class="flex flex-col pl-0 pr-0 gap-0 md:flex-row md:pl-9 md:pr-10 md:gap-8">
+        <div class="flex flex-col hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-all ml-0 p-5 rounded md:ml-3">
           <div class="p-2 rounded-full w-max bg-zinc-800 dark:bg-zinc-100">
             <img src="https://spotlight.tailwindui.com/_next/static/media/cosmos.c70b0295.svg">
           </div>
@@ -132,7 +132,7 @@
             <span class="text-white dark:text-black ml-3">github.com</span>
           </div>
         </div>
-        <div class="flex flex-col hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-all p-5 -ml-5 rounded">
+        <div class="flex flex-col hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-all p-5 -ml-0 md:-ml-5 rounded">
           <div class="p-2 rounded-full w-max bg-zinc-800 dark:bg-zinc-100">
             <img src="https://spotlight.tailwindui.com/_next/static/media/open-shuttle.db0327e4.svg">
           </div>
@@ -151,14 +151,14 @@
         </div>
       </div>
     </div>
-    <footer class="flex flex-row justify-around p-10">
-      <div class="text-white dark:text-black flex gap-8">
+    <footer class="flex flex-col justify-around p-10 border-t border-gray-200/50 md:flex-row">
+      <div class="text-white flex gap-8 dark:text-black">
         <a href="about.html" class="hover:text-emerald-400 transition-all">About</a>
         <a href="projects.html" class="hover:text-emerald-400 transition-all">Projects</a>
         <a href="speaking.html" class="hover:text-emerald-400 transition-all">Speaking</a>
         <a href="uses.html" class="hover:text-emerald-400 transition-all">Uses</a>
       </div>
-      <span class="text-white dark:text-black opacity-50">© 2024 Spencer Sharp. All rights reserved.</span>
+      <span class="text-white opacity-50 mt-4 pb-5 dark:text-black md:mt-0 md:pb-0">© 2024 Spencer Sharp. All rights reserved.</span>
     </footer>
   </div>
 
